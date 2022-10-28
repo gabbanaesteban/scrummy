@@ -27,7 +27,7 @@ var express = require('express'),
     bucket  = [],
     config  = require('./settings.json'),
     argv    = require('yargs').argv,
-    port    = argv.port || config.port;
+    port    = argv.port || 8080;
 
 app.use(express.static(__dirname + '/web'));
 server.listen(port);
